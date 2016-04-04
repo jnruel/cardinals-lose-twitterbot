@@ -246,6 +246,7 @@ class CardinalsLose(object):
 
 
 	def go(self):
+		print '___CHECK DAY___'
 		if self._xml_data:
 			if self.__do_play(self._date):
 				if self._environment == "local":
