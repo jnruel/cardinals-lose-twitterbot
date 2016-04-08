@@ -13,7 +13,6 @@ from db import MyDB
 
 class CardinalsLose(object):
 	_environment 	= os.environ['ENVIRONMENT']
-	# _test = TEST
 
 	AUXILIARY_VERBS = ['were', 'have been']
 	ADVERBS			= ['positively', 'absolutely', 'completely', 'indubitably', 'totally']
@@ -244,7 +243,7 @@ class CardinalsLose(object):
 
 
 
-
+	# check today and yesterday, in case it missed yesterday's game for whatever reason
 	def go(self):
 		print '___CHECK DAY___'
 		if self._xml_data:
